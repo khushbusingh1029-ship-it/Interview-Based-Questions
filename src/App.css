@@ -1,38 +1,96 @@
-.App {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: Arial;
+  margin: 0;
+    /* background: #c36df5; */
+    background:linear-gradient(96deg, rgb(252, 169, 252),rgb(247, 121, 247),rgb(245, 57, 245));
+}
+
+.home {
+  text-align: center;
+  padding: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.grid div{
+/* display: flex; */
+}
+.grid img{
+  width: 350px;
+  height: 250px;
+  justify-content: center;
+margin: auto;
+}
+.grid button{
+  width: 250px;
+}
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #b01beb;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #c167f5;
+}
+
+.quiz {
+  text-align: center;
+  padding: 40px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.result {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.interview{
+font-size: 40px;
+margin-bottom: 30px;
+font-family: a;
 }
+.language{
+font-size: 20px;
+margin-bottom: 50px;
+}
+.question{
+margin: 20px;
+color: red;
+font-weight: bolder;
+font-size: 40px;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.score{
+  font-size: 30px;
+  font-width: 400;
 }
-
-.App-link {
-  color: #61dafb;
+.result button{
+  margin: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.result h2{
+    font-size: 30px;
+  font-width: 400;
 }
+/* .main{
+  width: 40%;
+  margin: auto;
+background: white;
+margin-top: 30px;
+} */
